@@ -1,14 +1,14 @@
 package com.mlondi.tempertureconversion.Controllers;
 
 import com.mlondi.tempertureconversion.Models.OutputMessage;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
-@RestController
+@Controller
 public class KelvinCelsius {
     @RequestMapping(value = "/conversion/ktoc", method = RequestMethod.GET)
     @ResponseBody
