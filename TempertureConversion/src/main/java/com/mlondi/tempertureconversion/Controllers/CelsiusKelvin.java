@@ -1,4 +1,4 @@
-package com.mlondi.tempertureconversion;
+package com.mlondi.tempertureconversion.Controllers;
 
 import com.mlondi.tempertureconversion.Models.OutputMessage;
 import org.springframework.stereotype.Controller;
