@@ -7,14 +7,12 @@ Exposed Endpoints
   - endpoint = IP_ADDRESS:8080/conversion/ktom to convert kilometers to miles
   - endpoint = IP_ADDRESS:8080/conversion/mtok to convert miles to kilometers
 
-HOW to TEST
-  Option 1
+HOW to TEST Option 1
     - clone the project to your local
     - Run the TempertureConversionApplication.java class on your IDE
     - Launch your browser
-    - navigate to ${endpoint}?input=${input}
-  
-  Option 2
+    - navigate to ${endpoint}?input=${input} 
+Option 2
     - clone the project to your local
     - open your terminal
     - navigate to ${project_home}/test/java
