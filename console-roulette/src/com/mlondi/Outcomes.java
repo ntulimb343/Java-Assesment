@@ -44,4 +44,9 @@ public class Outcomes {
     public void setWinnings(double winnings) {
         this.winnings = winnings;
     }
+
+    @Override
+    public String toString() {
+        return playerName + "\t\t\t\t" + bet +"\t\t\t\t" + outcome + "\t\t\t" + winnings+"\n";
+    }
 }

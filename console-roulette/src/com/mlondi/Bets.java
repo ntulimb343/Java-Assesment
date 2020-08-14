@@ -37,10 +37,6 @@ public class Bets {
 
     @Override
     public String toString() {
-        return "Bets{" +
-                "playerName='" + playerName + '\'' +
-                ", bet='" + bet + '\'' +
-                ", amount=" + amount +
-                '}';
+        return "" + playerName + " " + bet + " " + amount+"\n";
     }
 }
