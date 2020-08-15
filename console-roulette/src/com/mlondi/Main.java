@@ -14,9 +14,9 @@ public class Main {
     private boolean multiple_bets;
     private int winningNumber = 0;
 
-    public void readFile(){
+    public void readFile(String fileName){
         try {
-            File myObj = new File("src/com/mlondi/players.txt");
+            File myObj = new File(fileName);
             Scanner myReader = new Scanner(myObj);
             System.out.println("--------------PLAYERS--------------");
             while (myReader.hasNextLine()) {
@@ -116,15 +116,15 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("--------------STARTING THE ROUND--------------");
         Main main = new Main();
-        main.readFile();
-        main.placeBets(main.players);
-        main.spinTheWheel(main.bets);
-        System.out.println("WINNING NUMBER: "+ main.winningNumber);
-        System.out.println("Player\t\t\t\tBet\t\t\t\tOutcome\t\t\tWinnings\n" +
-                "---------------------------------------------------------------");
-        for (Outcomes outcomes : main.outcomes){
-            System.out.println(outcomes.toString());
-        }
-        System.out.println("--------------END OF ROUND--------------");
+            main.readFile(args[0]);
+            main.placeBets(main.players);
+            main.spinTheWheel(main.bets);
+            System.out.println("WINNING NUMBER: " + main.winningNumber);
+            System.out.println("Player\t\t\t\tBet\t\t\t\tOutcome\t\t\tWinnings\n" +
+                    "---------------------------------------------------------------");
+            for (Outcomes outcomes : main.outcomes) {
+                System.out.println(outcomes.toString());
+            }
+            System.out.println("--------------END OF ROUND--------------");
     }
 }
